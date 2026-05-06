@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
         seconds_left = max(0, int(diff.total_seconds()))
 
         # إعدادات الصورة والخط
-        width, height = 800, 250
+        width, height = 600, 250
         try:
             font_path = os.path.join(os.path.dirname(__file__), 'font.ttf')
             main_font = ImageFont.truetype(font_path, 110) 
@@ -45,8 +45,8 @@ class handler(BaseHTTPRequestHandler):
             labels_text = "HOURS               MINUTES               SECONDS"
             
             # التمركز المطلق باستعمال anchor="mm" (Middle-Middle)
-            d.text((width/1, height/1 - 20), time_text, fill="#81A9D6", font=main_font, anchor="mm")
-            d.text((width/1, height/1 + 80), labels_text, fill="#ffffff", font=label_font, anchor="mm")
+            d.text((width/2, height/2 - 20), time_text, fill="#81A9D6", font=main_font, anchor="mm")
+            d.text((width/2, height/2 + 80), labels_text, fill="#ffffff", font=label_font, anchor="mm")
             
             frames.append(img)
             if seconds_left > 0: seconds_left -= 1
