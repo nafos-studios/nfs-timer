@@ -42,7 +42,7 @@ class handler(BaseHTTPRequestHandler):
             minutes = rem // 60
             seconds = rem % 60
             
-            time_text = f"{days:02d}  :  {hours:02d}  :  {minutes:02d}  :  {seconds:02d}"
+            time_text = f"{days:0d}  :  {hours:02d}  :  {minutes:02d}  :  {seconds:02d}"
             labels_text = "DAYS           HOURS           MINUTES           SECONDS"
             
             # وضع النص في الوسط (تقريبيا)
