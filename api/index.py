@@ -45,8 +45,8 @@ class handler(BaseHTTPRequestHandler):
             labels_text = "HOURS               MINUTES               SECONDS"
             
             # التمركز المطلق باستعمال anchor="mm" (Middle-Middle)
-            d.text((width/2, height/2 - 20), time_text, fill="#81A9D6", font=main_font, anchor="mm")
-            d.text((width/2, height/2 + 80), labels_text, fill="#ffffff", font=label_font, anchor="mm")
+            d.text((width/1, height/1 - 20), time_text, fill="#81A9D6", font=main_font, anchor="mm")
+            d.text((width/1, height/1 + 80), labels_text, fill="#ffffff", font=label_font, anchor="mm")
             
             frames.append(img)
             if seconds_left > 0: seconds_left -= 1
