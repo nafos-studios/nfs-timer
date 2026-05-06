@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
         seconds_left = max(0, int(diff.total_seconds()))
 
         # إعدادات الصورة والخط
-        width, height = 1000, 500
+        width, height = 1000, 250
         try:
             font_path = os.path.join(os.path.dirname(__file__), 'font.ttf')
             main_font = ImageFont.truetype(font_path, 110) 
