@@ -1,11 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/api/timer", "destination": "/api/timer.py" }
-  ],
-  "functions": {
-    "api/timer.py": {
-      "runtime": "python3.12",
-      "maxDuration": 10
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
     }
-  }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/index.py"
+    }
+  ]
 }
