@@ -1,8 +1,7 @@
 from http.server import BaseHTTPRequestHandler
 from PIL import Image, ImageDraw, ImageFont
 import io
-# ... باقي الكود اللي عطاهولك Claude
-"""
+
 Nafos Studios — Dynamic Countdown GIF Generator
 Vercel Serverless Function
 
