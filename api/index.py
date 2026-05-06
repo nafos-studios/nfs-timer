@@ -42,8 +42,8 @@ class handler(BaseHTTPRequestHandler):
             minutes = rem // 60
             seconds = rem % 60
             
-            time_text = f"{days:0d}  :  {hours:02d}  :  {minutes:02d}  :  {seconds:02d}"
-            labels_text = "DAYS           HOURS           MINUTES           SECONDS"
+            time_text = f"{hours:02d}  :  {minutes:02d}  :  {seconds:02d}"
+            labels_text = "  HOURS           MINUTES           SECONDS"
             
             # وضع النص في الوسط (تقريبيا)
             d.text((120, 40), time_text, fill="#81A9D6", font=main_font)
